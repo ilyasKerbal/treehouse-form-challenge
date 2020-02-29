@@ -114,6 +114,11 @@ textarea, input:not([type="checkbox"]):not([type="radio"]), select{
     -moz-appearance: none;
     appearance: none;
     color: #004445;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 #zip {
@@ -123,6 +128,7 @@ textarea, input:not([type="checkbox"]):not([type="radio"]), select{
 textarea:focus, input:not([type="checkbox"]):not([type="radio"]):focus, select:focus {
     outline: none;
     box-shadow: 0 0 3px #004445;
+    background-color: white;
 }
 
 .choice {
@@ -170,7 +176,7 @@ input:-moz-placeholder {
     Media Queries
 */
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
     fieldset:first-child .form-element {
         flex-direction: row;
         flex-wrap: wrap;
